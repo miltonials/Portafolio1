@@ -47,18 +47,18 @@ def multiplicarRecusivo(num, factor):
 •Nombre: divisionRecusivo
 •Entrada: divisor y dividendo (números enteros)
 •Salida: división entera de las entradas sin utilizar el operador de división 
-•Restricciones: en las entradas el divisor debe ser entero y el dividendo entero diferente a 0
+•Restricciones: en las entradas el divisor debe ser enteros mayores o igual a cero
 """
 
 
 def divisionRecusivo(divisor, dividendo):
-    if (isinstance(divisor, int) and isinstance(dividendo, int)):
+    if (isinstance(divisor, int) and isinstance(dividendo, int) and dividendo >= 0 and divisor >= 0):
         if(dividendo == 0):
             print("Las divisiones entre 0 no están definidas")
         else:
             return divisionRecusivo_aux(divisor, dividendo)
     else:
-        print("Error. Los números deben ser enteros")
+        print("Error. Los números deben ser enteros iguales o mayor a 0")
         return -1
 
 
