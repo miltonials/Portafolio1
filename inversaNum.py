@@ -1,5 +1,12 @@
+"""
+•Nombre: contarDigitos
+•Entrada:num (será un número entero mayor o igual a 0)
+•Salida: cantidad de dígitos que posée la entrada
+•Restricción: la entrada debe ser un número entero positivo
+Nota: esta función se utiliza para realizar  la función reversaNumero
+"""
 def contarDigitos(num):
-    if (isinstance(num, int)) == False:
+    if ((isinstance(num, int)) == False and < 0):
         return print("Error: tipo de dato no es entero")
     elif(num == 0):
         return 1
